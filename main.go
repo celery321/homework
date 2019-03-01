@@ -1,7 +1,11 @@
 package main
 
-import "github.com/szin2012/homework"
+import (
+	"homework/utils"
+)
 
 func main() {
-
+	utils.Hello()
+	//utils.Ginhello()
+	utils.Beegohello()
 }
