@@ -6,7 +6,7 @@ import (
 	//"net/http"
 )
 
-func ginhello() {
+func Ginhello() {
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "hello world")
