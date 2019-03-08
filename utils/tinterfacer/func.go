@@ -1,4 +1,4 @@
-package tinterfacer
+package main
 
 import "fmt"
 
