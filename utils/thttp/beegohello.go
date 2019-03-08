@@ -1,4 +1,4 @@
-package utils
+package thttp
 
 import "github.com/astaxie/beego"
 
