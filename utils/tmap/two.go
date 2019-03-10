@@ -29,10 +29,23 @@ func wordCount(str string) map[string]int {
 	return m
 
 }
+
+func ttt(p *map[string]int) {
+
+	fmt.Printf("%p %p", &p, *p)
+}
+
 func main() {
 	str := "i love my work and i love my fanily too"
 
 	mret := wordCount(str)
 
 	fmt.Println(mret)
+
+	m := make(map[string]int)
+	m["a"] = 1
+	m["b"] = 2
+	fmt.Printf("%p %p\n", m, &m)
+	ttt(&m)
+	fmt.Println(m)
 }
