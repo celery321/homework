@@ -25,7 +25,6 @@ func copyTodir(src, dst string) {
 	buf := make([]byte, 4096)
 
 	for {
-
 		n, err := f.Read(buf)
 		if err != nil && err == io.EOF {
 			fmt.Println("读完", n)
