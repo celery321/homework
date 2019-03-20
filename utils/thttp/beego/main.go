@@ -7,10 +7,10 @@ type HelloController struct {
 }
 
 func (this *HelloController) Get() {
-	this.Ctx.WriteString("hello world")
+	this.Ctx.WriteString("hello1")
 }
 
-func Beegohello() {
+func main() {
 	beego.Router("/", &HelloController{})
 	beego.Run()
 }
