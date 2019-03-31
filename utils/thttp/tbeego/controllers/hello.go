@@ -1,11 +1,16 @@
-package main
-
-import "github.com/astaxie/beego"
+package controllers
 
 type HelloController struct {
-	beego.Controller
+	BaseController
+	BaseResponse
 }
 
 func (this *HelloController) Get() {
-	this.Ctx.WriteString("hello1")
+	code := 200
+	msg := "1111"
+	data := []string{"111", "2222"}
+
+	content := this.BaseResponse.AddJsonFormat(code, msg, data)
+	this.BaseController.ReturnFormat(content)
+
 }

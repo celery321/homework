@@ -2,11 +2,9 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-	_ "github.com/beego/bee"
-	)
-
+	_ "homework/utils/thttp/tbeego/routers"
+)
 
 func main() {
-	beego.Router("/", &controllers.HelloController{})
 	beego.Run()
 }
