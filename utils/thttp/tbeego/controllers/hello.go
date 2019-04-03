@@ -12,5 +12,4 @@ func (this *HelloController) Get() {
 
 	content := this.BaseResponse.AddJsonFormat(code, msg, data)
 	this.BaseController.ReturnFormat(content)
-
 }

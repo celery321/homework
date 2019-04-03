@@ -7,7 +7,7 @@ import (
 )
 
 // Provider defines a set of read-only methods for accessing the application
-// configuration params as defined in one of the config files.
+// configuration params as defined in one of the config.go files.
 type Provider interface {
 	ConfigFileUsed() string
 	Get(key string) interface{}
