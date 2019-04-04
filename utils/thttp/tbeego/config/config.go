@@ -17,6 +17,8 @@ type DbConfig struct {
 	Host     string `toml:"host"`
 	Port     int    `toml:"port"`
 	Db       string `toml:"db"`
+	Db1      string `toml:"db1"`
+	Db2      string `toml:"db2"`
 	User     string `toml:"user"`
 	Password string `toml:"password"`
 }
