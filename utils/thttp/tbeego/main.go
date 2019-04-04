@@ -7,6 +7,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"homework/utils/thttp/tbeego/config"
 	"homework/utils/thttp/tbeego/log"
+	"homework/utils/thttp/tbeego/models/repository/db"
 	_ "homework/utils/thttp/tbeego/routers"
 	"os"
 )
@@ -34,6 +35,7 @@ func init() {
 }
 
 func main() {
-
+	l := log.Log()
+	l.Info("start server")
 	beego.Run()
 }
