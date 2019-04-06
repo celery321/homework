@@ -18,6 +18,8 @@ var _session *dbr.Session
 func Init() error {
 	//初始化数据连接
 	cfg := config.GetDbConfig()
+	cfg1 := config.Cfg.GetDbConfig()
+
 	dns := fmt.Sprintf(DB_DNS, cfg.User, cfg.Password, cfg.Host, cfg.Port, cfg.Db)
 	dns1 := fmt.Sprintf(DB_DNS1, cfg.User, cfg.Password, cfg.Host, cfg.Port, cfg.Db1)
 	dns2 := fmt.Sprintf(DB_DNS2, cfg.User, cfg.Password, cfg.Host, cfg.Port, cfg.Db2)

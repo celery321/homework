@@ -21,6 +21,8 @@ func init() {
 		fmt.Println(err)
 		os.Exit(0)
 	}
+	// 配置文件初始化
+	if err :=
 	//初始化日志组件
 	if err := log.Init(); err != nil {
 		fmt.Println(err)

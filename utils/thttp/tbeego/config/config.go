@@ -2,14 +2,16 @@ package config
 
 import (
 	"github.com/BurntSushi/toml"
+	"github.com/spf13/viper"
 )
 
 var _cfg MasterConfig
 
 // MasterConfig App主配置
 type MasterConfig struct {
-	Db DbConfig  `toml:"database"`
-	LC LogConfig `toml:"log"`
+	Db  DbConfig  `toml:"database"`
+	Db2 DbConfig  `toml:"database2"`
+	LC  LogConfig `toml:"log"`
 }
 
 // DbConfig 数据库配置
