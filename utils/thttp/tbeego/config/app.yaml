@@ -1,0 +1,24 @@
+HTTPPort: 81
+HTTPAddr: "127.0.0.1"
+
+appdb:
+  db:
+    Name: test
+    Host: 127.0.0.1:3306
+    Port: 80
+    User: root
+    password: 1111
+
+  db2:
+    Name: test
+    Host: 127.0.0.1:3306
+    Port: 80
+    User: root
+    Password: 2222
+
+applog:
+  Path: "./"
+  File: "log.log"
+
+
+
